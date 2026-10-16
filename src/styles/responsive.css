@@ -1,0 +1,72 @@
+/* ===== Responsive Layout ===== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .app-main {
+    margin-left: 0;
+  }
+
+  .app-content {
+    padding: 24px 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .app-content {
+    padding: 16px 16px 100px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .modal {
+    max-width: 100%;
+    border-radius: var(--radius);
+  }
+
+  .drawer {
+    width: 100%;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    bottom: 0;
+    top: auto;
+    max-height: 85vh;
+    animation: slideInUp 0.3s ease;
+  }
+
+  @keyframes slideInUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .modal-footer {
+    padding-bottom: 16px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 400px) {
+  .app-content {
+    padding: 12px 12px 90px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .btn-lg {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+}
