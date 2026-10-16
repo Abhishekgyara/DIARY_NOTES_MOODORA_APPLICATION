@@ -67,6 +67,7 @@ export default function Signup() {
                 <input
                   type="text"
                   name="name"
+                  autoComplete="name"
                   className="input-field input-with-icon"
                   placeholder="Your name"
                   value={form.name}
@@ -83,6 +84,7 @@ export default function Signup() {
                 <input
                   type="email"
                   name="email"
+                  autoComplete="email"
                   className="input-field input-with-icon"
                   placeholder="you@example.com"
                   value={form.email}
@@ -99,6 +101,7 @@ export default function Signup() {
                 <input
                   type="password"
                   name="password"
+                  autoComplete="new-password"
                   className="input-field input-with-icon"
                   placeholder="At least 6 characters"
                   value={form.password}
@@ -115,6 +118,7 @@ export default function Signup() {
                 <input
                   type="password"
                   name="confirmPassword"
+                  autoComplete="new-password"
                   className="input-field input-with-icon"
                   placeholder="Re-enter your password"
                   value={form.confirmPassword}

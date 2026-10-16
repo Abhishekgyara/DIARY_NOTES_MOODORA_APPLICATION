@@ -78,6 +78,7 @@ export default function Login() {
                   <input
                     type="email"
                     name="email"
+                    autoComplete="username"
                     className="input-field input-with-icon"
                     placeholder="you@example.com"
                     value={form.email}
@@ -94,6 +95,7 @@ export default function Login() {
                   <input
                     type="password"
                     name="password"
+                    autoComplete="current-password"
                     className="input-field input-with-icon"
                     placeholder="Enter your password"
                     value={form.password}
