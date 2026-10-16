@@ -45,7 +45,7 @@ Vite proxies `/api` to `http://localhost:4000`. For a deployed frontend, set `VI
 
 ## Deploy to Vercel
 
-The Vercel deployment serves the Vite site and the Express API from the same origin. The catch-all serverless function under `api/` forwards API requests to the Express app; `vercel.json` sends client-side routes to the SPA entry point.
+The Vercel deployment serves the Vite site and the Express API from the same origin. The `api/index.js` serverless function forwards API requests to the Express app; `vercel.json` rewrites `/api/*` requests to that function and sends client-side routes to the SPA entry point.
 
 1. Push this project to a Git provider and import it in Vercel. Set the Vercel **Root Directory** to `project` if the repository contains this app in a subfolder.
 2. Keep the build command as `npm run build` and the output directory as `dist`. The `api/` function is detected automatically; do not set a separate `VITE_API_URL` for the same-origin deployment.
